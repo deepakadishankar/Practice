@@ -18,6 +18,7 @@ function binary(first,last) {
     console.log("Added indx val divided", center);
     centerx = Math.floor(center)
     console.log("whole numbered index val", centerx);
+    console.log(a.indexOf(centerx),'weree');
     if (centerx != input) {
         console.log("centerx value is ", centerx, "and input val is ", input);
         if (centerx < input) {
