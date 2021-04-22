@@ -14,4 +14,4 @@
        System.out.println("Sum of these numbers: "+div);
        System.out.println("Sum of these numbers: "+multi);
     }
- }
+   }
