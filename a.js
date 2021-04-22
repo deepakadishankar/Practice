@@ -1,14 +1,34 @@
-let nums = [4, 4, 8, 55, ">EU", 444, 444, 666]
-
-for (let index = 0; index < nums.length; index++) {
-    console.log("incoming ", nums[index]);
-    const element = nums[index];
-
-    if (element === 55) {
-        nums.splice(index, 1)
+let nums = [1];
+let list = [];
+for (j=0;j< nums.length;j++) {
+    let v = j;
+    w = 0
+    console.log("J index"+j);
+    for (let i = v; i < nums.length; i++) {
+        s = w+ nums[i];
+        console.log(w, "+", nums[i], " = " + s);
+        list.push(s)
+        w = s;
     }
-
-   
 }
+x = Math.max(...list)
+console.log(list);
+console.log(x);
+console.log(x);
 
-console.log(nums);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
