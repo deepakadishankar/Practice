@@ -18,4 +18,4 @@ else
 
 }
 //greatest ()
-console.log(greatest(1231323443,2387656766423,34));
+console.log(greatest(1231323443,2387656766423,));
