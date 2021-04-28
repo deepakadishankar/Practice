@@ -15,27 +15,21 @@ if (a.length > b.length) {
     longOne = b;
     shortOne = a;
 }
-
-for(k=0;k< longOne.length-shortOne.length;k++){
-    shortOne = addonstr.concat(shortOne);
+if (lengthOfa > lengthOfb){
+    theGreatestLength = lengthOfa;
+   for(k=0;k< theGreatestLength-lengthOfb;k++){
+    b = addonstr.concat(b);
     //console.log(b);
    }
-
-// if (lengthOfa > lengthOfb){
-//     theGreatestLength = lengthOfa;
-//    for(k=0;k< theGreatestLength-lengthOfb;k++){
-//     b = addonstr.concat(b);
-//     //console.log(b);
-//    }
-// }
-// else {
-//     theGreatestLength = lengthOfb;
-//     for(k=0;k< theGreatestLength-lengthOfa;k++){
-//         a = addonstr.concat(a);
-//         //console.log(a);
-//        }
-// }
-console.log("The Greatest",longOne.length);
+}
+else {
+    theGreatestLength = lengthOfb;
+    for(k=0;k< theGreatestLength-lengthOfa;k++){
+        a = addonstr.concat(a);
+        //console.log(a);
+       }
+}
+console.log("The Greatest",theGreatestLength);
 let res = [];
 console.log("a =",a,"b =",b);
 for (i = theGreatestLength-1 ; i >= 0; i--) {

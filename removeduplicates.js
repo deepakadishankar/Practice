@@ -20,5 +20,5 @@ var removeDuplicates = function(nums) {
 
 
 
-console.log(removeDuplicates(nums), nums);
+console.log(removeDuplicates(nums),nums);
 

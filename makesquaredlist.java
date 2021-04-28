@@ -16,7 +16,7 @@ public class makesquaredlist {
         // System.out.println(b.get(0));
         // int input = 10;
         for (int i = 0; i < b.size(); i++) {
-            a.add(b.get(i) * b.get(i));
+            a.add(b.get(i) * b.get(i));     
             // System.out.println(i);
         }
         System.out.println(a);
