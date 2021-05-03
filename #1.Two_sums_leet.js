@@ -1,19 +1,15 @@
-//nums = [1,2,3,4,5];
-//target = 9;
 function Tosum(nums, target) {
-
-    for (i = 0; i < nums.length; i++) {
-        for (j = 0; j < nums.length; j++) {
-            if (i = j) {
-                console.log("ue");
-
-
+        let b = [];
+        for (i = 0; i < nums.length; i++) {
+            for (j = 0; j < nums.length; j++) {
+                if (i != j) {
+                    if (nums[i] + nums[j] == target) {
+                        b.push (i,j);
+                        return b;
+                    }
+                }
             }
-            else (nums[j] == target - nums[i])
-            console.log( i, j);
-
         }
-    }
-
-
-} Tosum([0, 1, 2, 3, 4], 8)
+    } 
+    let x = Tosum([2,7,11,15], 9);
+    console.log(x);

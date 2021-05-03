@@ -1,0 +1,24 @@
+import java.util.*;
+public class palindrom {
+    public static void main(String[] args) {
+        Integer input = 123321;
+        String newInput = Integer.toString(input);
+        if (newInput.startsWith("")){
+
+        }
+        int median = newInput.length()/2;
+        System.out.println(median);
+        String firstHalf = newInput.substring(0,median);
+        System.out.println(firstHalf);
+       // System.out.println(StringFormatter.reverseString("my name is khan"));
+       String reverse = new StringBuffer(firstHalf).reverse().toString();
+        System.out.println(reverse);
+        System.out.println(reverse.trim());
+        String lastHalf = newInput.substring(newInput.length() - median);
+        System.out.println(lastHalf);
+        if (reverse.equals(lastHalf)){
+            System.out.println("yesss");
+        }
+
+    }
+}
